@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel = "stylesheet" id = "header.css" type = "text/css" href = "https://rawgit.com/Razat94/portfolio/master/header/header.css">
+	</head>
+	
+	<script id = "header.js" type="text/javascript" src="https://rawgit.com/Razat94/portfolio/master/header/header.js" ></script>
+	
+	<style>
+		
+	a {
+		text-decoration: none;
+	}
+	
+	#container {
+		border: 0px solid red;
+		width: 86%;
+		height: auto;
+		margin-top: 3%;
+		margin-left: 7%;
+		overflow: hidden;
+	}
+	
+	#container a img {
+		overflow: hidden;
+		width: 48%;
+		height: 300px;
+		margin-bottom: 3%;
+		text-decoration: none;
+		float: left;
+		border: 0px solid red;
+	}
+	
+	#container a img:hover {
+		opacity: 0.6;
+    	filter: alpha(opacity=60); /* For IE8 and earlier */
+	}
+	
+	#container a:nth-child(even) img {
+		margin-left: 4%;
+	}
+	
+	/* Fading animation */
+	.fade {
+		-webkit-animation-name: fade;
+		-webkit-animation-duration: 1s;
+		animation-name: fade;
+		animation-duration: 1s;
+	}
+	
+	@-webkit-keyframes fade {
+		from {opacity: .2} 
+		to {opacity: 1}
+	}
+	
+	@keyframes fade {
+		from {opacity: .2} 
+		to {opacity: 1}
+	}
+	
+	@media only screen and (max-width: 700px) {
+	
+		#container {
+			width: 90%;
+			margin-top: 5%;
+			margin-left: 5%;
+		}
+		
+		#container a img {
+			width: 100%;
+			height: 300px;
+			margin-bottom: 0%;
+		}
+		
+		#container a:not(:last-child) img{
+			margin-bottom: 5%; /*set the bottom margin for every project except the last one by 5%;*/
+		}
+		
+		#container a:nth-child(even) img {
+			margin-left: 0%;
+		}
+	}
+		
+	</style>
+	
+	<body>
+	
+		<table id = "header">
+			<tr>
+				<th>
+					<form action = "https://razat94.github.io/portfolio/">
+						<button> <strong>Projects</strong> </button>
+					</form>
+				</th>
+				
+				<th> Raza Tahir </th>
+				
+				<th>
+					<form action = "https://razat94.github.io/portfolio/aboutMe.html">
+						<button> <strong>About Me</strong> </button>
+					</form>
+				</th>
+				
+				<th>
+					<div id = "hamburgerIcon" onclick="Navigation()">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+
+					<div id="sidenav">
+						<a href="https://razat94.github.io/portfolio/">Projects</a>
+						<a href="https://razat94.github.io/portfolio/aboutMe.html">About Me</a>
+					</div>
+				</th>
+			</tr>
+		</table>
+		
+		
+		
+	
+		
+		<div id = "container"> 
+			<a href = "https://razat94.github.io/portfolio/Projects/Pong">
+				<img class = "fade" src = "https://raw.githubusercontent.com/Razat94/c_sharp/master/Pong.png" />
+			</a>
+		
+			<a href = "https://razat94.github.io/portfolio/Projects/OSLCwebsite">
+				<img class = "fade" src = "https://raw.githubusercontent.com/Razat94/OSLC/master/Github%20Images/OSTC%20Students%20Jumping.jpg" />
+			</a>
+		</div>
+		
+	</body>
+</html>

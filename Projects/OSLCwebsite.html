@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel = "stylesheet" id = "header.css" type = "text/css" href = "https://rawgit.com/Razat94/portfolio/master/header/header.css">
+		<link rel = "stylesheet" type = "text/css" href = "https://rawgit.com/Razat94/portfolio/master/modal/modal.css"> 
+	</head>
+	
+	<script id = "header.js" type="text/javascript" src="https://rawgit.com/Razat94/portfolio/master/header/header.js" ></script>
+	
+	<style>
+		
+		p, u {
+			font-size: 20px;
+			color: #3d3d5c;
+		}
+	
+		a {
+			text-decoration: none;
+			color: #0645AD;
+		}
+		
+		h1 {
+			font-size: 40px;
+			margin: auto;
+		}
+		
+		h2 {
+			font-size: 30px; 
+		}
+		
+		#container {
+			border: 0px solid red;
+			overflow: hidden;
+			margin-top: 3%;
+			color: #404040;
+			text-align: center;
+			-webkit-animation: fadeEffect 1s;
+			animation: fadeEffect 1s;
+		}
+		
+		@-webkit-keyframes fadeEffect {
+			from {opacity: 0;}
+			to {opacity: 1;}
+		}
+
+		@keyframes fadeEffect {
+			from {opacity: 0;}
+			to {opacity: 1;}
+		}
+	
+		#container .projectLinks {
+			border: 0px solid red;
+			width: 60%;
+			max-width: 700px;
+			margin: 3% auto;
+		}
+	
+		#container .projectLinks img { 
+			border: 0px solid green;
+			margin: 2% auto;
+			width: 100%;
+			height: 300px;
+			border-radius: 3%;
+		}
+	
+		#container .projectLinks > img:hover {
+			opacity: 0.5;
+				filter: alpha(opacity=50); /* For IE8 and earlier */
+		}
+	
+		#container .projectLinks button {
+			border: 2px solid #0086b3; 
+			color: #0086b3;
+			height: 70px;
+			width: 70%;
+			font-size: 25px;
+			font-family: Courier;
+			margin: 3% auto;
+			display: block;
+			border-radius: 5px;
+			transition-duration: 0.3s;
+		}
+	
+		#container .projectLinks button:hover {
+			background-color: #0086b3;
+			color: white;
+		}
+	
+		#container .explanation {
+			border: 0px solid green;
+			float: left;
+			height: auto;
+			width: 60%; 
+			margin: 0% 20% 1% 20%;
+			text-align: left;
+		}
+		
+		#container .designFlaws {
+			border: 0px solid blue;
+			width: 80%;
+			overflow: hidden;
+			margin: 1% 10%;
+			position: relative;
+			
+		}
+		
+		#container .designFlaws p {
+			float: left;
+			width: 40%;
+			margin: auto;
+			padding: auto;
+			position: absolute;
+			top: 50%;
+			left: 0%;
+			text-align: center;
+			transform: translate(-0%, -50%);
+		}
+		
+		#container .designFlaws img {
+			position: relative;
+			float: right;
+			width: 55%;
+			margin: auto;
+			vertical-align: middle;
+			padding: 2% 0%;
+		}
+		
+		@media screen and (max-width: 700px) {
+		
+			h1 {
+				font-size: 35px;
+			}
+			
+			h2 {
+				font-size: 25px; 
+			}
+		
+			#container .projectLinks {
+				width: 80%;
+				margin: 3% 10%;
+			}
+
+			#container .designFlaws {
+				margin-left: 5%;
+				width: 90%;	
+			}
+
+			#container .designFlaws p {
+				position: relative;
+				width: 90%;
+				margin: 5% 3%;
+				top: 0%;
+				left: 0%;
+				transform: translate(0%, 0%);
+			}
+		
+			#container .designFlaws img {
+				width: 100%;
+			}
+			
+			#container .explanation {
+				width: 90%;
+				margin-left: 5%;
+				margin-bottom: 0%;
+			}
+		
+		}
+		
+	</style>
+	
+	<body>
+	
+		<table id = "header">
+			<tr>
+				<th>
+					<form action = "https://razat94.github.io/portfolio/">
+						<button> <strong>Projects</strong> </button>
+					</form>
+				</th>
+				
+				<th> Raza Tahir </th>
+				
+				<th>
+					<form action = "https://razat94.github.io/portfolio/aboutMe.html">
+						<button> <strong>About Me</strong> </button>
+					</form>
+				</th>
+				
+				<th>
+					<div id = "hamburgerIcon" onclick="Navigation()">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+
+					<div id="sidenav">
+						<a href="https://razat94.github.io/portfolio/">Projects</a>
+						<a href="https://razat94.github.io/portfolio/aboutMe.html">About Me</a>
+					</div>
+				</th>
+			</tr>
+		</table>
+		
+		
+		<!-- __________________________Beginning of OSLC project_________________________________________________ -->
+		
+		
+		<div id = "container"> 
+			
+			<h1>One Step Learning Center</h1>
+			<h2>Powered by HTML, CSS, JavaScript and jQuery </h2>
+			
+			<div class = "projectLinks">
+				
+				<img id = "OSLC" src = "https://raw.githubusercontent.com/Razat94/OSLC/master/Github%20Images/OSTC%20Students%20Jumping.jpg" onclick = "getModal('OSLC')" />
+				<!-- The Modal -->
+				<div id="myModal">
+					<span class="close">&times;</span>
+					<img class="myModal-content">
+				</div>
+				
+				<script id = "modal.js" type="text/javascript" src="https://rawgit.com/Razat94/portfolio/master/modal/modal.js" ></script>
+				
+				
+				
+				<form action="https://github.com/Razat94/OSLC" target = "_blank"> 
+					<button  class="projectCode">Source Code</button>
+				</form>
+				
+				<form action="https://Razat94.github.io/OSLC" target = "_blank"> 
+					<button  class="projectCode">Visit</button>
+				</form>
+					
+			</div>
+					
+			<div class = "explanation">
+				
+				<center> <u>Description:</u> </center>
+				<p>
+					One Step Learning Center holds after-school programs that offers academic assistance to children. 
+					Here is the official website:
+				</p>
+				
+				<center style = "font-size: 20px;"> <a href = "http://onesteplearningcenter.org/">One Step Learning Center</a> </center>
+					
+				<p>
+					I recreated this website because I wanted to become better at front end development. 
+					There were two major design flaws that I noticed with the main website that I wanted to avoid when recreating the site. 
+					These were the issues that were kept in mind: 
+				</p>
+				
+			</div>
+				
+			<div class = "designFlaws">
+			
+				<img src = "https://raw.githubusercontent.com/Razat94/OSLC/master/Design%20Flaws/Spacing.png">
+
+				<p>
+					First off, I felt as though there was too much padding and spacing everywhere.
+					As you can tell, everything looks stretched out.
+				</p>
+				
+				
+			</div>
+			
+			<div class = "designFlaws">
+
+				<img src = "https://raw.githubusercontent.com/Razat94/OSLC/master/Design%20Flaws/Unresponsive.png">
+				
+				<p>
+					Secondly, the page wasn't responsive enough. For example, at a certain width, the navigation bar and the icon image weren't centered evenly.
+				</p>	
+				
+			</div>
+
+			<div class = "explanation">
+				
+				<center> <u>What I've Learned: </u> </center>
+				
+				<p> 
+				The most important thing that I've learned is to NEVER validate credentials on the client side - always validate forms on the server side 
+				because in regards to cyber security, validating things otherwise would be insecure and practically useless. The top answers from a few 
+				threads on Stack Overflow helped me realize my mistake. The important ones can be found 
+				
+				<a href = "https://security.stackexchange.com/questions/49376/is-it-ever-safe-to-skip-server-side-validations">here,</a>
+				
+				<a href = "https://stackoverflow.com/questions/30791458/username-and-password-validation-in-html"> here  </a>
+				
+				and 
+				
+				<a href = "https://stackoverflow.com/questions/46155/how-to-validate-email-address-in-javascript"> here.  </a>
+				
+				I experienced the drawback firsthand. When I tried running the page on Internet Explorer, this alert kept on popping up:
+				</p>
+				
+				<center> <img src = "https://raw.githubusercontent.com/Razat94/OSLC/master/Design%20Flaws/jsFailure.PNG"> </center>
+				
+				<p>
+				Internet Explorer automatically restricted the JavaScript from running, rendering the entire script useless. Even if users 
+				don't use Internet Explorer, other web browsers allow users the option to manually turn JavaScript off or on for all sites.
+			
+				After realizing this fact, I was initially discouraged to publish the form. However, an answer from
+				
+				<a href = "https://stackoverflow.com/questions/162159/javascript-client-side-vs-server-side-validation">this thread</a>
+				
+				convinced me otherwise. "In short - always, always validate server-side and then consider client-side validation as an added "extra" to enhance the end user experience."
+				</p>
+				
+				<p>
+				So overall, the "Donations" page is completely insecure because I'm running the check on the client side and not on the server side.
+				However, I hope that in the future I can learn how to validate forms on the server side so that I can update the form.
+				</p>
+				
+			</div> <!-- End of div explanation -->	
+		
+		</div>
+		
+		<!-- __________________________Ending of OSLC project_________________________________________________ -->
+		
+	</body>
+</html>

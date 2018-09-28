@@ -1,0 +1,123 @@
+
+	html, body {
+		margin: 0;
+		padding: 0;
+		background-color: #fafafa;//#fafafa;//#e6f2ff;
+		-webkit-text-size-adjust: none; /* Prevent font scaling in landscape */
+	}
+	
+	button {
+		outline: none;
+		background: none;
+		cursor: pointer;
+		border: 0px solid red;
+	}
+
+	#header {
+		width: 100%;
+		border-collapse: collapse;
+		height: 50px;
+		top: 0;
+		border-bottom: 1px solid #025697;//#02487e;
+		background-color: #f5f4f3;
+	}
+	
+	#header th:first-child, th:nth-child(3) {
+		width: 20%;
+		padding: 0;
+	}
+	
+	#header button, table form {}
+	
+	#header th:first-child button, #header th:nth-child(3) button  {
+		font-size: 20px;
+		color: #025697;
+		padding-top: 10%;
+	}
+	
+	#header th:first-child button:hover, #header th:nth-child(3) button:hover  {
+		color: #a0a0dd;//#e6e6dd;
+	}
+	
+	#header th:nth-child(2) { 
+		/*Raza Tahir*/
+		font-size: 50px;
+		color: #02487e;
+		border: 0px solid blue;
+	}
+	
+	
+	#hamburgerIcon {
+		display: none;
+		position: relative;
+		cursor: pointer;
+		
+	}
+	
+	.bar1, .bar2, .bar3 {
+		width: 35px;
+		height: 5px;
+		background-color: #02487e;//#333;
+		margin: 6px 0;
+		transition: 0.4s;
+	}
+	
+	.change .bar1 {
+		-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+		transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+
+	.change .bar2 {opacity: 0;}
+
+	.change .bar3 {
+		-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+		transform: rotate(45deg) translate(-8px, -8px) ;
+	}
+		
+	#sidenav {
+		display: none;
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		background-color: #f0f0f0;//#111;
+		overflow: hidden;
+	}
+
+	#sidenav a {
+		border: 0px solid blue;
+		width: 100%;
+		font-size: 30px;
+		color: #025697;//#818181;
+		margin: 1% auto;
+		padding: 1% 0%;
+		display: inline-block;
+		text-decoration: none;
+		//transform: translate(0%, 110%);
+		transform: translate(0%, 300%);
+	}
+
+	#sidenav a:hover {
+		text-decoration: underline; 
+	}
+	
+	#hamburgerIcon:hover .bar1, #hamburgerIcon:hover .bar2, #hamburgerIcon:hover .bar3 { } 
+	
+	@media screen and (max-width: 700px) {
+		
+		#header th:first-child, th:nth-child(3) {
+			display: none;
+		}
+		
+		#hamburgerIcon {
+			display: inline-block;
+			float: right;
+			border: 0px solid green;
+			z-index: 1;
+			margin-right: 10%;
+			height: auto;
+		}
+		
+	}
+	
