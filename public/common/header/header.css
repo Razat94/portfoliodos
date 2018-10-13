@@ -20,6 +20,7 @@
 		top: 0;
 		border-bottom: 1px solid #025697;//#02487e;
 		background-color: #f5f4f3;
+		z-index: 2;
 	}
 	
 	#header th:first-child, th:nth-child(3) {
