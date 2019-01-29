@@ -92,24 +92,6 @@
 				filter: alpha(opacity=50); /* For IE8 and earlier */
 		}
 	
-		#container .projectLinks button {
-			border: 2px solid #0086b3; 
-			color: #0086b3;
-			height: 70px;
-			width: 70%;
-			font-size: 25px;
-			font-family: Courier;
-			margin: 3% auto;
-			display: block;
-			border-radius: 5px;
-			transition-duration: 0.3s;
-		}
-	
-		#container .projectLinks button:hover {
-			background-color: #0086b3;
-			color: white;
-		}
-	
 		#container .explanation {
 			border: 0px solid green;
 			float: left;
@@ -235,7 +217,9 @@
 			</div>
 			</div>
 		</nav>
-		
+
+		<header class="site-header border-bottom logo--left" role="banner">
+		</header>
 		
 		<!-- __________________________Beginning of OSLC project_________________________________________________ -->
 		
@@ -247,27 +231,27 @@
 			
 			<div class = "projectLinks">
 				
-				<img id = "CRUD" src = "../public/img/paperpenicon.png" />
+				<!-- <img id = "CRUD" src = "../public/img/paperpenicon.png" /> -->
 				
 				<form action="http://bloginc.herokuapp.com/" target = "_blank"> 
 					<button class="projectCode">Visit</button>
+				</form>
+
+				<form action="https://github.com/Razat94/Bloginc" target = "_blank"> 
+					<button class="projectCode">Source Code</button>
 				</form>
 					
 			</div>
 					
 			<div class = "explanation">
 				
-				<center> <u>Description:</u> </center>
-				<center>
-				<p>
-					A simple blogging site that utilizes CRUD methods.
-				</p>
-				</center>
-				
 				<center> <u>What I've Learned</u> </center>
 				
 				<p>
-				This is the first website that I've ever created with Express! It was very fun and straight-forward.
+				This is the first website that I've ever created using the Express framework! 
+				Although developing the back end of the website with a Node based framework seemed daunting at first,
+				it was surprisingly was very easy to learn. If anything, making requests seemed easier in Express than it did
+				in plain old Node.js.
 				</p>
 				
 			</div> <!-- End of div explanation -->	
