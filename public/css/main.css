@@ -1,0 +1,56 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 0.85rem;
+	font-family: "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
+	line-height: 1.5;
+}
+
+h1 {
+	box-sizing: border-box;
+	font-size: 2em;
+}
+
+p, li {
+	color: #788188;
+	font-size: 0.8rem;
+}
+
+a {
+		text-decoration: none;
+}
+
+#site-header {
+	font-size: 1.25em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.marginSpacingForMainContainer {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+#pageContainer {
+	width: 70%;
+}
+
+@media only screen and (max-width: 768px) {
+	#pageContainer {
+		width: 90%;
+	}
+}
+
+#oldCard {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	display: block;
+	margin: 1.5rem auto;
+}
+
+#oldCard:hover {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}	

@@ -1,42 +1,42 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<!--- basic page needs
-		================================================== -->
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="name" content="Raza Tahir" />
-		<meta name="description" content="A showcase of my projects & expertise">
-		
-		<!-- Document Title & Tab Image --> 
-		<title>ACDC-Raza Tahir</title>
-		<link id = "titleImg" rel="shortcut icon" type="image/x-icon" href="../public/img/r.png"/>
-		
-		<!-- mobile specific metas
-		================================================== -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<!-- Files needed for header
-		================================================== -->
-		<link rel = "stylesheet" id = "header.css" type = "text/css" href = "../public/common/header/header.css">
-		<script id = "header.js" type="text/javascript" src="../public/common/header/header.js" ></script>
-		
-		<!-- Modal -->
-		<link rel = "stylesheet" type = "text/css" href = "../public/common/modal/modal.css">
-		<!-- The script file affecting the modal can be found in the code below! -->
-	</head>
+<html lang="en">
+<head>
+	<!--- basic page needs (Meta Information)
+	================================================== -->
+    <meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	
+	<!-- mobile specific metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- SEO Tags -->
+    <meta name="description" content="Portfolio Website">
+    <meta name="author" content="Raza Tahir">
+	<meta name="keywords" content="raza, tahir, raza tahir, portfolio, github, projects, website, web development" />
+    
+	<!-- Tab Icon & Title -->
+	<title>Projects - Raza Tahir</title>
+	<link id = "titleImg" rel="icon" type="image/png" href="./public/img/icons/Blue_orb.png"/>
+	 
+	<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href ="../public/css/main.css" id="header.css" type ="text/css">
+	
+	<!-- Scripts
+	================================================== -->
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>	 
+	<!-- Bootstraps default jquery ^^^ -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
 	
 	
 	<style>
-		
-		p, li, u {
-			font-size: 20px;
-		}
-	
-		p, li {
-			color: #3d3d5c;
-		}
 	
 		a {
 			text-decoration: none;
@@ -156,36 +156,48 @@
 		
 	<body>
 	
-		<table id = "header">
-			<tr>
-				<th>
-					<form action = "../index.html">
-						<button> <strong>Projects</strong> </button>
-					</form>
-				</th>
-				
-				<th> Raza Tahir </th>
-				
-				<th>
-					<form action = "../aboutMe.html">
-						<button> <strong>About</strong> </button>
-					</form>
-				</th>
-				
-				<th>
-					<div id = "hamburgerIcon" onclick="Navigation()">
-						<div class="bar1"></div>
-						<div class="bar2"></div>
-						<div class="bar3"></div>
-					</div>
-
-					<div id="sidenav">
-						<a href="../index.html">Projects</a>
-						<a href="../aboutMe.html">About</a>
-					</div>
-				</th>
-			</tr>
-		</table>
+		<!-- Navbar -->
+		<nav class="navbar navbar-light navbar-expand-md">
+			<div class = "container">
+			<a href="../index.html" class="navbar-brand mr" id = "site-header" style = "color: #02487e;">
+				Raza Tahir
+			</a> 
+			<button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse collapse" id="collapsingNavbar2">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="../index.html">
+							Projects
+							<span class="sr-only">Home</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../about.html">About</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav ml-auto flex-row flex-nowrap">
+					<li class="nav-item">
+						<a class="nav-link" href = "mailto:Razat51@gmail.com" target = "_blank">
+							<i class="fa fa-envelope mr-1"></i>
+						</a> 
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://github.com/Razat94?tab=repositories">
+							<i class="fa fa-github-alt mr-1"></i>
+						</a> 
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.linkedin.com/in/razatahir">
+							<i class="fa fa-linkedin"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</nav>
+		
 		
 		
 		<!-- __________________________Beginning of C# project_________________________________________________ -->
@@ -199,15 +211,7 @@
 			<div class = "projectLinks">
 				
 				<img id = "pongImg" src = "https://raw.githubusercontent.com/Razat94/ACDC/master/images/carousel/slideshow-0.jpg"  onclick = "getModal('pongImg')"/>
-				
-				<!-- The Modal -->
-				<div id="myModal">
-					<span class="close">&times;</span>
-					<img class="myModal-content">
-				</div>
-				
-				<script id = "modal.js" type="text/javascript" src="../public/common/modal/modal.js"  ></script>
-				
+			
 				<!--
 				Another way to do the button below it.
 				<a href = "https://github.com/Razat94/c_sharp/tree/master/C%23_Pong_Game" target = "_blank">
