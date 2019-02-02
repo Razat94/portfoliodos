@@ -24,7 +24,7 @@
 	================================================== -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 	<link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href ="../public/css/main.css" id="main.css" type ="text/css">
+	<link rel="stylesheet" href ="../public/css/main.css" id="header.css" type ="text/css">
 	
 	<!-- Scripts
 	================================================== -->
@@ -35,7 +35,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 	
-	<style>	
+	<style>
 	
 		a {
 			text-decoration: none;
@@ -104,15 +104,21 @@
 		
 		
 		<main class="container" id = "pageContainer"> 
-
+			
 			<div class="text-center">
-					<h1 id = "site-header">Blog Inc.</h1>
-					<h2 id = "site-header">A CRUD application that utilizes Express and MongoDB</h2>
-				</div>
+				<h1 id = "site-header">Blog Inc.</h1>
+				<h2 id = "site-header">A CRUD application that utilizes Express and MongoDB</h2>
+			</div>
 			
 			<div style = "">
 				
-				<!-- <img id = "CRUD" src = "../public/img/paperpenicon.png" /> -->
+				<!-- If you take out the below img, then all of a sudden the navbars spacing gets messed up -->
+				<img id = "CRUD" src = "../public/img/paperpenicon.png" style = "border: 0px solid green;
+	width: 60%;
+	height: 15rem;
+	border-radius: 3%;
+	margin: 3% auto;
+	display: block;"/>
 				
 				<form action="http://bloginc.herokuapp.com/" target = "_blank"> 
 					<button class="projectLinksButton">Visit</button>
@@ -123,7 +129,7 @@
 				</form>
 					
 			</div>
-					
+			
 			<div class = "explanation">
 				
 				<center> <u>What I've Learned</u> </center>
@@ -136,6 +142,8 @@
 				</p>
 				
 			</div> <!-- End of div explanation -->	
+			
+			
 		
 		</main>
 		
