@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-	font-size: 0.85rem;
+	font-size: 0.9rem;
 	font-family: "Montserrat","HelveticaNeue","Helvetica Neue",sans-serif;
 	line-height: 1.5;
 }
@@ -20,28 +20,47 @@ p, li {
 }
 
 a {
-		text-decoration: none;
+	text-decoration: none;
 }
 
-#site-header {
-	font-size: 1.25em;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-}
-
-.marginSpacingForMainContainer {
+/* 
+Please take close note for the main & pageContainers selectors.
+Every page will have a main tag underneath the navbar that represents the main content of the page,
+i.e. the home, about, and each individual project page WILL have a main tag underneath the navbar.
+HOWEVER the #pageContainer selector is only for pages that needs a lot of shrinking.
+The home page DOESN'T need this extra amount of shrinking, so it DOESN'T have it.
+*/
+main {
 	margin-top: 2rem;
 	margin-bottom: 2rem;
 }
 
 #pageContainer {
 	width: 70%;
+	-webkit-animation: fadeEffect 1s;
+	animation: fadeEffect 1s;
 }
 
 @media only screen and (max-width: 768px) {
 	#pageContainer {
 		width: 90%;
 	}
+}
+
+/* Fade in effect */
+@-webkit-keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+#site-header {
+	font-size: 1.25em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }
 
 #oldCard {
@@ -53,7 +72,7 @@ a {
 
 #oldCard:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}	
+}
 
 .projectLinksButton {
 	border: 2px solid #0086b3; 
@@ -65,6 +84,7 @@ a {
 	font-family: Courier;
 	margin: auto;
 	margin-top: 5%;
+	margin-bottom: 5%;
 	display: block;
 	border-radius: 5px;
 	transition-duration: 0.3s;

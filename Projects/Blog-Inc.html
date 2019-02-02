@@ -35,8 +35,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 	
-	<style>
-		
+	<style>	
 	
 		a {
 			text-decoration: none;
@@ -50,106 +49,6 @@
 		
 		h2 {
 			font-size: 30px; 
-		}
-		
-		#container {
-			border: 0px solid red;
-			overflow: hidden;
-			margin-top: 3%;
-			color: #404040;
-			text-align: center;
-			-webkit-animation: fadeEffect 1s;
-			animation: fadeEffect 1s;
-		}
-		
-		@-webkit-keyframes fadeEffect {
-			from {opacity: 0;}
-			to {opacity: 1;}
-		}
-
-		@keyframes fadeEffect {
-			from {opacity: 0;}
-			to {opacity: 1;}
-		}
-	
-		#container .explanation {
-			border: 0px solid green;
-			float: left;
-			height: auto;
-			width: 60%; 
-			margin: 0% 20% 1% 20%;
-			text-align: left;
-		}
-		
-		#container .designFlaws {
-			border: 0px solid blue;
-			width: 80%;
-			overflow: hidden;
-			margin: 1% 10%;
-			position: relative;
-			
-		}
-		
-		#container .designFlaws p {
-			float: left;
-			width: 40%;
-			margin: auto;
-			padding: auto;
-			position: absolute;
-			top: 50%;
-			left: 0%;
-			text-align: center;
-			transform: translate(-0%, -50%);
-		}
-		
-		#container .designFlaws img {
-			position: relative;
-			float: right;
-			width: 55%;
-			margin: auto;
-			vertical-align: middle;
-			padding: 2% 0%;
-		}
-		
-		@media screen and (max-width: 700px) {
-		
-			h1 {
-				font-size: 35px;
-			}
-			
-			h2 {
-				font-size: 25px; 
-			}
-		
-			#container .projectLinks {
-				width: 80%;
-				margin: 3% 10%;
-			}
-
-			#container .designFlaws {
-				margin-left: 5%;
-				width: 90%;	
-			}
-
-			#container .designFlaws p {
-				position: relative;
-				width: 90%;
-				margin: 5% 3%;
-				top: 0%;
-				left: 0%;
-				transform: translate(0%, 0%);
-			}
-		
-			#container .designFlaws img {
-				width: 100%;
-			}
-			
-			#container .explanation {
-				width: 90%;
-				margin-left: 5%;
-				margin-bottom: 0%;
-			}
-		
 		}
 		
 	</style>
@@ -204,10 +103,12 @@
 		<!-- __________________________Beginning of OSLC project_________________________________________________ -->
 		
 		
-		<div id = "container" style = "text-align: center; display: block; margin: auto; width: 60%;"> 
-			
-			<h1>Blog Inc.</h1>
-			<h2>A CRUD application that utilizes Express and MongoDB</h2>
+		<main class="container" id = "pageContainer"> 
+
+			<div class="text-center">
+					<h1 id = "site-header">Blog Inc.</h1>
+					<h2 id = "site-header">A CRUD application that utilizes Express and MongoDB</h2>
+				</div>
 			
 			<div style = "">
 				
@@ -236,7 +137,7 @@
 				
 			</div> <!-- End of div explanation -->	
 		
-		</div>
+		</main>
 		
 		<!-- __________________________Ending of OSLC project_________________________________________________ -->
 		
