@@ -1,7 +1,7 @@
 # Data Science Portfolio
-https://razat94.github.io/data-science-portfolio/index.html
+https://razat94.github.io/portfolio/data-science
 
-This data science portfolio is a compilation of notebooks which I've created to analyze data. 
+This data science portfolio is a compilation of notebooks I've created to analyze data. 
 
 ## Credits
 The css styling for the portfolio was used [here](https://github.com/sindresorhus/github-markdown-css).
