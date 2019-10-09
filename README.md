@@ -2,7 +2,8 @@
 
 Work and projects are showcased through [this portfolio](https://razat94.github.io/portfolio/).
 
-Part of this portfolio showcases projects related to analyzing data. Those projects can be viewed [here](https://razat94.github.io/portfolio/data-science).
+Part of this portfolio showcases projects related to analyzing data. 
+Those projects can be viewed [here](https://razat94.github.io/portfolio/data-science).
 
 Handy websites that were useful:
 - Hex Color Picker: https://www.w3schools.com/colors/colors_picker.asp
