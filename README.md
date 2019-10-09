@@ -5,12 +5,13 @@ Work and projects are showcased through [this portfolio](https://razat94.github.
 Part of this portfolio showcases projects related to analyzing data. Those projects can be viewed [here](https://razat94.github.io/portfolio/data-science)
 
 Handy websites that were useful:
-Hex Color Picker: https://www.w3schools.com/colors/colors_picker.asp
-Hex Color Contrast Checker: http://webaim.org/resources/contrastchecker/
-Wikipedia's URL Colors: https://en.wikipedia.org/wiki/Help:Link_color
-Convert Raw Github Files into Usable Files: https://rawgit.com/
-This website was published by following this guide: https://guides.github.com/features/pages/
-How to set up a custom domain for Github Pages: https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site
+- Hex Color Picker: https://www.w3schools.com/colors/colors_picker.asp
+- Hex Color Contrast Checker: http://webaim.org/resources/contrastchecker/
+- Wikipedia's URL Colors: https://en.wikipedia.org/wiki/Help:Link_color
+- Convert Raw Github Files into Usable Files: https://rawgit.com/
+- This website was published by following this guide: https://guides.github.com/features/pages/
+- How to set up a custom domain for Github Pages: https://help.github.com/en/articles/managing-a-custom-domain-for-your-github-pages-site
+
 P.S. By default a web server will display the index.html or index.aspx, or default.aspx page in a folder.
 
 ## Additional Credits:
