@@ -28,6 +28,10 @@ a {
 	color: #0645AD;
 }
 
+footer a {
+	color: #0086b3; /*  */
+}
+
 h1 {
 	font: normal 400 36px/1.4 Lato;
     color: #515357;

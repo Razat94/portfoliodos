@@ -21,7 +21,12 @@ p, li {
 
 a {
 	text-decoration: none;
-	color: #0645AD;
+	color: #0086b3;
+}
+
+.pageContainer a {
+	text-decoration: underline;
+	color: #0086b3 !important;
 }
 
 h1 {
@@ -116,6 +121,7 @@ main {
 .projectLinksButton:hover {
 	background-color: #0086b3;
 	color: white;
+	cursor: pointer;
 }
 
 #container .projectLinks {
