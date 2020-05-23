@@ -45,130 +45,81 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 	
+<style>	
+	#container .projectLinks, #container .explanation {
+		-webkit-animation: fadeEffect 1s;
+		animation: fadeEffect 1s;
+	}
 	
-	<style>
-	
-		a {
-			text-decoration: none;
-		}
-	
-		ul {
-			list-style-type: square;
-			display: inline-block;
-			margin-top: 0;
-		}
-		
-		#container {
-			border: 0px solid red;
-			overflow: hidden;
-			margin-top: 3%;
-		}
-		
-		h1 , h2 {
-			color: #404040;
-			text-align: center;
-		}
-	
-		.explanation {
-			border: 0px solid green;
-			float: left;
-			min-height: 400px;
-			height: auto;
-			width: 45%; 
-			margin: 1% 0% 3% 5%;
-			text-align: left;
-			
-		}
-		
-		#container .projectLinks, #container .explanation {
-			-webkit-animation: fadeEffect 1s;
-			animation: fadeEffect 1s;
-		}
-		
-		@-webkit-keyframes fadeEffect {
-			from {opacity: 0;}
-			to {opacity: 1;}
-		}
+	@-webkit-keyframes fadeEffect {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
 
-		@keyframes fadeEffect {
-			from {opacity: 0;}
-			to {opacity: 1;}
-		}
+	@keyframes fadeEffect {
+		from {opacity: 0;}
+		to {opacity: 1;}
+	}
+</style>
 		
-		@media screen and (max-width: 700px) {
-			
-			#container .projectLinks { 
-				width: 70%;
-				margin-left: 15%;
-			}
-			
-			#container .explanation { 
-				width: 90%;
-				margin: 5% 5%;
-			}
-			
-		}
+<body>
 
-	</style>
-		
-	<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-light navbar-expand-md">
+		<div class = "container">
+		<a href="../" class="navbar-brand mr" id = "site-header" style = "color: #02487e;">
+			Raza Tahir
+		</a> 
+		<button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse collapse" id="collapsingNavbar2">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="../">
+						Projects
+						<span class="sr-only">Home</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../about.html">About</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav ml-auto flex-row flex-nowrap">
+				<li class="nav-item">
+					<a class="nav-link" href = "mailto:Razat51@gmail.com" target = "_blank">
+						<i class="fa fa-envelope mr-1"></i>
+					</a> 
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://github.com/Razat94?tab=repositories">
+						<i class="fa fa-github-alt mr-1"></i>
+					</a> 
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://www.linkedin.com/in/razatahir">
+						<i class="fa fa-linkedin"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
 	
-		<!-- Navbar -->
-		<nav class="navbar navbar-light navbar-expand-md">
-			<div class = "container">
-			<a href="../" class="navbar-brand mr" id = "site-header" style = "color: #02487e;">
-				Raza Tahir
-			</a> 
-			<button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="navbar-collapse collapse" id="collapsingNavbar2">
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="../">
-							Projects
-							<span class="sr-only">Home</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="../about.html">About</a>
-					</li>
-				</ul>
-				<ul class="nav navbar-nav ml-auto flex-row flex-nowrap">
-					<li class="nav-item">
-						<a class="nav-link" href = "mailto:Razat51@gmail.com" target = "_blank">
-							<i class="fa fa-envelope mr-1"></i>
-						</a> 
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://github.com/Razat94?tab=repositories">
-							<i class="fa fa-github-alt mr-1"></i>
-						</a> 
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://www.linkedin.com/in/razatahir">
-							<i class="fa fa-linkedin"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-			</div>
-		</nav>
-		
-		<header class="site-header border-bottom logo--left" role="banner">
-		</header>
-		
-		<!-- __________________________Beginning of C# project_________________________________________________ -->
-		
-		
-		<div id = "container"> 
-			
-			<h1 id = "site-header">Pong Game </h1>
-			<h2 id = "site-header">A C# Animation Program </h2>
-			
-			<div class = "projectLinks">
-				
-				<img id = "pongImg" src = "https://raw.githubusercontent.com/Razat94/Pong-Game/master/Pong.png"  onclick = "getModal('pongImg')"/>
+	<header class="site-header border-bottom logo--left" role="banner">
+	</header>
+	
+	<!-- __________________________Beginning of Project_________________________________________________ -->
+	
+	
+	<main class = "container"> 
+		<div class = "text-center" id = "site-header">
+			<h1>Pong Game</h1>
+			<h2>A C# Animation Program</h2>
+		</div>
+		<div class = "row">		
+			<div class = "col-md-6 mt-3">
+				<img class = "project-img" id = "pongImg" src = "https://raw.githubusercontent.com/Razat94/Pong-Game/master/Pong.png"  onclick = "getModal('pongImg')"/>
 
 				<!--
 				Another way to do the button below it.
@@ -180,10 +131,9 @@
 				<form action="https://github.com/Razat94/Pong-Game" target = "_blank"> 
 					<button class="projectLinksButton">Source Code</button>
 				</form>
-				
 			</div>
 					
-			<div class = "explanation">
+			<div class = "col-md-6 mt-3">
 				
 				<center> <u>System Requirements:</u> </center>
 				<p>
@@ -196,9 +146,7 @@
 						<li>The source files & script file must all be in one folder.</li>
 					</ul>
 				</p>
-					
 				<center> <u>What I've Learned</u> </center>
-					
 				<p>
 					This is the final project that I had to do in my CPSC 223N (C# Programming) class.
 					While the idea of this game is EXTREMELY simple, the fact of the matter 
@@ -214,12 +162,11 @@
 					& rules of the program.
 					
 				</p>
-
 			</div> <!-- End of div explanation -->	
-		
 		</div>
-		
-		<!-- __________________________Ending of C# project_________________________________________________ -->
-		
-	</body>
+	</main>
+
+	<!-- __________________________End of Project_________________________________________________ -->
+	
+</body>
 </html>
