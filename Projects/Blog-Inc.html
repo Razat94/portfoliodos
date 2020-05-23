@@ -45,72 +45,67 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
 	
-	<style>
-		
-	</style>
-	
-	<body>
-	
-		<!-- Navbar -->
-		<nav class="navbar navbar-light navbar-expand-md">
-			<div class = "container">
-			<a href="../" class="navbar-brand mr" id = "site-header" style = "color: #02487e;">
-				Raza Tahir
-			</a> 
-			<button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="navbar-collapse collapse" id="collapsingNavbar2">
-				<ul class="navbar-nav">
-					<li class="nav-item active">
-						<a class="nav-link" href="../">
-							Projects
-							<span class="sr-only">Home</span>
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="../about.html">About</a>
-					</li>
-				</ul>
-				<ul class="nav navbar-nav ml-auto flex-row flex-nowrap">
-					<li class="nav-item">
-						<a class="nav-link" href = "mailto:Razat51@gmail.com" target = "_blank">
-							<i class="fa fa-envelope mr-1"></i>
-						</a> 
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://github.com/Razat94?tab=repositories">
-							<i class="fa fa-github-alt mr-1"></i>
-						</a> 
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="https://www.linkedin.com/in/razatahir">
-							<i class="fa fa-linkedin"></i>
-						</a>
-					</li>
-				</ul>
-			</div>
-			</div>
-		</nav>
+<style>
+</style>
 
-		<header class="site-header border-bottom logo--left" role="banner">
-		</header>
-		
-		<!-- __________________________Beginning of OSLC project_________________________________________________ -->
-		
-		
-		<main class="container" id = "pageContainer"> 
-			
-			<div class="text-center">
-				<h1 id = "site-header">Blog Inc.</h1>
-				<h2 id = "site-header">A CRUD application that utilizes Express and MongoDB</h2>
-			</div>
-			
-			<div style = "">
-				
-				<!-- If you take out the below img, then all of a sudden the navbars spacing gets messed up -->
-				<img id = "mainProjectImg" src = "../public/img/paperpenicon.png" style = ""/>
-				
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-light navbar-expand-md">
+		<div class = "container">
+		<a href="../" class="navbar-brand mr" id = "site-header" style = "color: #02487e;">
+			Raza Tahir
+		</a> 
+		<button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse collapse" id="collapsingNavbar2">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="../">
+						Projects
+						<span class="sr-only">Home</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../about.html">About</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav ml-auto flex-row flex-nowrap">
+				<li class="nav-item">
+					<a class="nav-link" href = "mailto:Razat51@gmail.com" target = "_blank">
+						<i class="fa fa-envelope mr-1"></i>
+					</a> 
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://github.com/Razat94?tab=repositories">
+						<i class="fa fa-github-alt mr-1"></i>
+					</a> 
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://www.linkedin.com/in/razatahir">
+						<i class="fa fa-linkedin"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
+
+	<header class="site-header border-bottom logo--left" role="banner">
+	</header>
+	
+	<!-- __________________________Beginning of Project_________________________________________________ -->
+	
+	<main class="container" id = "animation"> 
+		<div class = "text-center" id = "site-header">
+			<h1>Blog Inc.</h1>
+			<h2>A CRUD application that utilizes Express and MongoDB</h2>
+		</div>
+	
+		<section class = "row">
+			<div class="col-md-6 mt-3">
+	
 				<form action="http://bloginc.herokuapp.com/" target = "_blank"> 
 					<button class="projectLinksButton">Visit</button>
 				</form>
@@ -118,27 +113,26 @@
 				<form action="https://github.com/Razat94/Bloginc" target = "_blank"> 
 					<button class="projectLinksButton">Source Code</button>
 				</form>
-					
 			</div>
-			
-			<div class = "explanation">
-				
+		
+			<div class="col-md-6 mt-3">
 				<center> <u>What I've Learned</u> </center>
-				
 				<p>
 				This is the first website that I've ever created using the Express framework! 
+				I used Heroku to host the project & mLabs to host the MongoDB Database.
+				</p>
+
+				<p>
+				Routing the end points and having the server return files was fun to learn. 
 				Although developing the back end of the website with a Node based framework seemed daunting at first,
 				it was surprisingly was very easy to learn. If anything, making requests seemed easier in Express than it did
 				in plain old Node.js.
 				</p>
-				
 			</div> <!-- End of div explanation -->	
-			
-			
-		
-		</main>
-		
-		<!-- __________________________Ending of OSLC project_________________________________________________ -->
-		
-	</body>
+		</section>
+	</main>
+	
+	<!-- __________________________End Project_________________________________________________ -->
+	
+</body>
 </html>
