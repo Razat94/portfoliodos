@@ -47,9 +47,10 @@ h6 {
 	box-sizing: border-box;
 }
 
-p, li {
+main p, main li {
 	color: #788188;
 	font-size: 1rem;
+	font-family: Lato;
 }
 
 /* For devices 992 px and smaller */
@@ -63,10 +64,6 @@ p, li {
 	main h6, main p, main li {
 		font-size: 1rem;
 	}
-}
-
-main p, main li {
-	font-family: Lato;
 }
 
 ul {
@@ -210,4 +207,33 @@ main {
 
 .nav-link:focus, .nav-link:hover {
     text-decoration: underline;
+}
+
+/* Lucky Egg Pages */
+.arrow {
+    height: 50px;
+    width: 50px;
+    transform: rotate(45deg);
+    margin: auto;
+    top: 25px;
+    left: 0%;
+    position: relative;
+}
+
+.arrow-down {
+    height: 50px;
+    width: 50px;
+    transform: rotate(45deg);
+    margin: auto;
+    bottom: 25px;
+    left: 0%;
+    position: relative;
+}
+
+.white-background {
+	background: white;
+}
+
+.light-gray-background {
+	background: #f9f9f9;
 }

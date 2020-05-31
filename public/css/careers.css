@@ -53,13 +53,18 @@ label {
 }
 
 /* https://stackoverflow.com/questions/51299051/placeholder-color-change-in-bootstrap */
-.form-control::placeholder {
+/* Change all aspects of input field in form */
+input, .form-control::placeholder {
 	font-size: 0.9rem !important;
 	line-height: 1.4;
 	font-size: 0.8rem;
 	font-family: Lato;
 	
 	vertical-align: middle;
+}
+
+.form-control:active {
+	color: red;
 }
 
 .star {
