@@ -18,9 +18,14 @@
 	.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
 */
 
+/* CSS Variables using the var() function */
+:root {
+	--blue: aliceblue;
+}
+
 .jumbotron {
   padding: 1rem;
-  background-color: #f6f8fa;
+  background-color: var(--bg-color, #f6f8fa); /*Same as this:  background-color: #f6f8fa; */
   border-radius: 0.3rem;
   line-height: 1.45;
 }
