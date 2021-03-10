@@ -54,6 +54,14 @@ body {
 	}
 }
 
+
+@media only screen and (max-width: 576px) {
+	/* Add margin for breadcrumb on small devices */
+	#disclaimer {
+		margin-top: 30px;
+	}
+}
+
 h1 {
 	font-size: 1.5em;
 }
@@ -77,15 +85,14 @@ main {
 
 main a {
 	text-decoration: underline;
-	
+	/* background-color: var(--main-blue); */
 }
 
 /* CSS to Highlight Links on MouseOver */
 /* provided by Christopher Heng, thesitewizard.com */
 main a:only-child:hover {
-	background-color: var(--main-blue);
 	color: black ;
-    background-color: #cfc; 
+    /* background-color: #cfc;  */
 }
 
 main p, main li {
@@ -113,28 +120,6 @@ ul {
 	margin-top: 0;
 }
 
-/* Main Hero Image on Home Page */
-.hero-image-ocean {
-	background-image: url(./public/img/unsplash/0-ocean.jpg);
-	background-position: center center;
-	background-attachment: inherit;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 50%;
-
-	/* Text */
-	color: white;
-	padding: 3rem 0rem;
-	text-align: center;
-
-	/* Darken CSS background image */
-	background-color:#0077b3;
-	background-blend-mode: multiply;
-}
-
-.hero-image-ocean h1,  .oceanBackground h2  {
-	font-size: 2rem !important;
-}
 
 /* Style for Overall Headings on Homepage & Category Pages */
 .section-heading {
@@ -217,6 +202,10 @@ ul {
 	color: #979797;
 	font: 15px Railway, sans-serif;
 }
+
+.img-container:not(:last-child) {
+	margin-bottom: 1rem;
+}s
 
 #animation {
 	-webkit-animation: fadeEffect 1s;

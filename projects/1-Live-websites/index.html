@@ -34,18 +34,18 @@
 	<!-- CSS
 	================================================== -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-	<link rel="stylesheet" href ="./vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href ="./public/css/main.css" id="main.css" type ="text/css">
-	<link rel="stylesheet" href ="./public/css/github-css/jumbotron-bootstrap.css" id="Jumbotron.css" type ="text/css">
+	<link rel="stylesheet" href ="../../vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href ="../../public/css/main.css" id="main.css" type ="text/css">
+	<link rel="stylesheet" href ="../../public/css/github-css/jumbotron-bootstrap.css" id="Jumbotron.css" type ="text/css">
 
 	<!-- Breadcrumb -->
 	<link rel = "stylesheet" type = "text/css" href = "https://razat94.github.io/learnCplusplus/public/common/breadcrumb/breadcrumb.css">
 
 	<!-- JS
 	================================================== -->
-	<script src= "./vendor/jquery/jquery.min.js"></script>
-	<script src= "./vendor/popper/popper.js"></script>
-	<script src= "./vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src= "../../vendor/jquery/jquery.min.js"></script>
+	<script src= "../../vendor/popper/popper.js"></script>
+	<script src= "../../vendor/bootstrap/js/bootstrap.min.js"></script>
 	
 	<!-- Online Scripts (Linking external script WILL slow down your website; I recommend downloading them.
 	==================================================
@@ -62,29 +62,6 @@
 </head>
 
 <style>
-
-	/* Main Hero Image on Home Page */
-	.hero-image-ocean {
-		background-image: url(./public/img/unsplash/0-ocean.jpg);
-		background-position: center center;
-		background-attachment: inherit;
-		background-size: cover;
-		background-repeat: no-repeat;
-		height: 50%;
-	
-		/* Text */
-		color: white;
-		padding: 3rem 0rem;
-		text-align: center;
-	
-		/* Darken CSS background image */
-		background-color:#0077b3;
-		background-blend-mode: multiply;
-	}
-	
-	.hero-image-ocean h1,  .oceanBackground h2  {
-		font-size: 2rem !important;
-	}
 		
 </style>
 
@@ -93,7 +70,7 @@
 	<!-- Navbar -->
 	<nav class="navbar navbar-light navbar-expand-md">
 		<div class = "container">
-		<a href="./" class="navbar-brand mr" id = "site-header" style = "color: #02487e;">
+		<a href="../../" class="navbar-brand mr" id = "site-header" style = "color: #02487e;">
 			Raza Tahir
 		</a> 
 		<button class= "navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar2" aria-label="Hamburger Icon">
@@ -102,12 +79,12 @@
 		<div class="navbar-collapse collapse" id="collapsingNavbar2">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<a class="nav-link" href="./" aria-label="Learn more about Razas projects">
+					<a class="nav-link" href="../../" aria-label="Learn more about Razas projects">
 						Projects
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="./about.html" aria-label="Learn more about Raza">About</a>
+					<a class="nav-link" href="../../about.html" aria-label="Learn more about Raza">About</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav ml-auto flex-row flex-nowrap">
@@ -134,28 +111,26 @@
 	<header class="site-header border-bottom logo--left" role="banner">
 	</header>
 
-	<div class="hero-image-ocean" id = "home">
-		<h1>Hi, I am Raza.</h1>
-		<h2>I like to design and code software & web applications. </h2>
-	</div>
-
 	<main class = "container"> 
 
 		<div class = "text-center section-heading">
-			<h2>Portfolio Projects</h2>
+			<h2>Live Website Projects</h2>
 			<div class="heading-after"><span></span></div>							
 		</div>
+
+		<ul class="breadcrumb">
+			<li><a href="../../index.html">Home</a></li>
+			<li>Live Websites</li>
+		</ul>
 			
 		<div class="row" id = "animation">
-			<div class="col-sm-12 col-md-6 col-xl-4 img-container text-center">
-				<a href = "./Projects/1-Live-websites/"> 
-					<img class = "animated zoomIn individual-img" src="./public/img/unsplash/1.jpg" title = "C# Pong Animation Game" />
-				</a>
+			<div class="col-sm-12 col-md-6 col-xl-4 img-container text-center" style = "border: 1px solid black;">
+				
 				<div id = "site-header">
-					<h3 class = "demo-title"> Live Websites </h3>
+					<h3 class = "demo-title"> Learn C++ </h3>
 				</div>
 				<p>
-					View some sample live websites
+					A set of tutorials to learn how to program in C++
 				</p>
 			</div>
 
@@ -191,19 +166,11 @@
 					<h3 class = "demo-title"> Documentation </h3>
 				</div>
 				<p>
-					Come read some cool documents
+					Come read up on some cool documents
 				</p>
 			</div>
 		</div>	
-
-		<div id = "disclaimer" class="jumbotron" style = "margin-bottom: 1rem;">
-			
-			<p>
-				Pictures provided by <a href = "https://unsplash.com/">unsplash.com</a> 
-				"The internet’s source of freely-usable images."
-			</p>
-		</div>
-
+		
 	</main>
 	</body>
 </html> 
