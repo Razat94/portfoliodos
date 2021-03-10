@@ -33,6 +33,11 @@ body {
 	line-height: 1.5;
 }
 
+:root {
+	--main-blue: #0077b3;
+	--white: #ffffff; 
+  }
+
 @media only screen and (max-width: 576px) {
 	/* Make font icons bigger and more spread out in mobile devices */
 	.nav-link {
@@ -65,10 +70,22 @@ h6 {
 	font-size: 30px;
 }
 
-#site-header {
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	box-sizing: border-box;
+main {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+main a {
+	text-decoration: underline;
+	
+}
+
+/* CSS to Highlight Links on MouseOver */
+/* provided by Christopher Heng, thesitewizard.com */
+main a:only-child:hover {
+	background-color: var(--main-blue);
+	color: black ;
+    background-color: #cfc; 
 }
 
 main p, main li {
@@ -96,14 +113,109 @@ ul {
 	margin-top: 0;
 }
 
-main a {
-	text-decoration: none;
-	color: #0086b3;
+/* Main Hero Image on Home Page */
+.hero-image-ocean {
+	background-image: url(./public/img/unsplash/0-ocean.jpg);
+	background-position: center center;
+	background-attachment: inherit;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50%;
+
+	/* Text */
+	color: white;
+	padding: 3rem 0rem;
+	text-align: center;
+
+	/* Darken CSS background image */
+	background-color:#0077b3;
+	background-blend-mode: multiply;
 }
 
-main {
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+.hero-image-ocean h1,  .oceanBackground h2  {
+	font-size: 2rem !important;
+}
+
+/* Style for Overall Headings on Homepage & Category Pages */
+.section-heading {
+	margin-bottom: 30px;
+}
+
+.section-heading h2 {
+	margin-top: 0px;
+    position: relative;
+    font-size: 30px;
+    line-height: 50px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.heading-after {
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 16px;
+    margin: auto;
+    position: relative;
+	width: 16px;
+}
+
+.heading-after:before {
+    background: black;
+    content: "";
+    height: 1px;
+    left: 100%;
+    position: absolute;
+    top: 7px;
+    width: 45px;
+}
+
+.heading-after:after {
+    background: black;
+    content: "";
+    height: 1px;
+    right: 100%;
+    position: absolute;
+    top: 7px;
+    width: 45px;
+}
+
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.heading-after span {
+    background: #185a9d;
+    border-radius: 50%;
+    display: block;
+    height: 6px;
+    margin: 4px;
+    text-indent: -999999px;
+	width: 6px;
+	font-weight: 100;
+}
+/* End of CSS Heading-After */
+
+/* Homepage CSS for Image Grid (CSS affecting text within grid included) */
+.demo-title {
+    text-align: center;
+    font: 22px Railway, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#site-header {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	box-sizing: border-box;
+}
+
+.img-container p {
+	color: #979797;
+	font: 15px Railway, sans-serif;
 }
 
 #animation {
@@ -121,7 +233,6 @@ main {
 	to {opacity: 1;}
 }
 
-/* Used in Home page */
 .individual-img {
 	width: 100%;
 	height: 15rem;
@@ -147,7 +258,7 @@ main {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-/* Used in Projects page */
+/* Used to style each individual Projects page */
 .projectLinksButton {
 	border: 2px solid #0086b3; 
 	color: #0086b3;
@@ -176,48 +287,6 @@ main {
 	height: 15rem;
 	border-radius: 3%;
 	margin-bottom: 3%;
-}
-
-.aboutContainer {
-	width: 100%;
-	height: 100%;
-	line-height: 1.5;
-	box-sizing: border-box;
-  }
-  
-/* For devices 576 px and smaller */
-@media (max-width: 576px) {
-	.aboutContainer {
-		padding: 0rem 1rem 1rem;
-	}
-}
-
-/* For devices b/w 576px and 767px  */
-@media (min-width: 576px) and (max-width: 767px) {
-	.aboutContainer {
-		padding: 0rem 2rem 1rem;
-	}
-}
-
-/* For devices b/w 768px and 991px  */
-@media (min-width: 768px) and (max-width: 991px) {
-	.aboutContainer {
-		padding: 0rem 3rem 1rem;
-	}
-}
-
-/* For devices b/w 992px and 1199px */
-@media (min-width: 992px) and (max-width: 1199px) {
-	.aboutContainer {
-		padding: 0rem 8rem 1rem;
-	}
-}
-
-/* For devices 1200px and larger */
-@media (min-width: 1200px) {
-	.aboutContainer {
-		padding: 0rem 12rem 1rem;
-	}
 }
 
 /* Bootstrap Navbar */
@@ -260,4 +329,49 @@ main {
 
 .light-gray-background {
 	background: #f9f9f9;
+}
+
+/* CSS affecting unused HTML */
+/* --- Please Ignore --> */
+
+.aboutContainer {
+	width: 100%;
+	height: 100%;
+	line-height: 1.5;
+	box-sizing: border-box;
+}
+  
+/* For devices 576 px and smaller */
+@media (max-width: 576px) {
+	.aboutContainer {
+		padding: 0rem 1rem 1rem;
+	}
+}
+
+/* For devices b/w 576px and 767px  */
+@media (min-width: 576px) and (max-width: 767px) {
+	.aboutContainer {
+		padding: 0rem 2rem 1rem;
+	}
+}
+
+/* For devices b/w 768px and 991px  */
+@media (min-width: 768px) and (max-width: 991px) {
+	.aboutContainer {
+		padding: 0rem 3rem 1rem;
+	}
+}
+
+/* For devices b/w 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+	.aboutContainer {
+		padding: 0rem 8rem 1rem;
+	}
+}
+
+/* For devices 1200px and larger */
+@media (min-width: 1200px) {
+	.aboutContainer {
+		padding: 0rem 12rem 1rem;
+	}
 }

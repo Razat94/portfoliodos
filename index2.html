@@ -1,190 +1,196 @@
-<html>
-<link href="./vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
-<script src="./vendor/jquery/jquery.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--- basic page needs (Meta Information)
+	================================================== -->
+    <meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- mobile specific metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- SEO Tags -->
+	<meta name="description" content="Portfolio website showcasing projects created by Raza Tahir, 
+	a software developer based in Los Angeles, CA.">
+	<meta name="author" content="Raza Tahir">
+	<meta name="keywords" content="raza, tahir, raza tahir, portfolio, github, projects, website, web development" />
+
+	<!-- Tab Icon & Title -->
+	<title> Home | Raza Tahir </title>
+	<link id = "titleImg" rel="icon" type="image/png" href="./public/img/icons/Blue_orb.png"/>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137821771-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-137821771-1');
+	</script>
+
+	<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<link rel="stylesheet" href ="./vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href ="./public/css/main.css" id="main.css" type ="text/css">
+	<link rel="stylesheet" href ="./public/css/github-css/jumbotron-bootstrap.css" id="Jumbotron.css" type ="text/css">
+
+	<!-- Breadcrumb -->
+	<link rel = "stylesheet" type = "text/css" href = "https://razat94.github.io/learnCplusplus/public/common/breadcrumb/breadcrumb.css">
+
+	<!-- JS
+	================================================== -->
+	<script src= "./vendor/jquery/jquery.min.js"></script>
+	<script src= "./vendor/popper/popper.js"></script>
+	<script src= "./vendor/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Online Scripts (Linking external script WILL slow down your website; I recommend downloading them.
+	==================================================
+	
+	Bootstraps Default jquery:
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>	 
+	Popper.min.js:
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	Bootstrap JS:
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	-->
+
+</head>
+
 <style>
-body{
-    background: white;
-}
-span{
-    font-size:15px;
-}
-a{
-  text-decoration:none; 
-  color: #0062cc;
-  border-bottom: none; /*2px solid #0062cc; */
-}
-.box{
-    padding:60px 0px;
-}
-
-.row{
-}
-
-.box-part{
-    background: white;
-    padding:1rem 10px;
-    margin:30px 0px;
-	border: 1px solid #F2A900;
-	min-height: auto;
-	height: 20rem;
-}
-
-.box-part > a > img {
-	width: 50%;
-	margin-bottom: 1rem;
-	height: 5rem;
- 
-}
-.text{
-	margin:0.5rem 0px;
-	padding: 0rem 0.5rem;
-}
-
-.fa{
-     color:#4183D7;
-}
+	
+	.img-container:not(:last-child) {
+		margin-bottom: 1rem;
+	}
+		
 </style>
 
-<body>
-<div class="box">
-    <div class="container">
-     	<div class="row">
-			 
-			    <div class="col-lg-4 col-md-6 col-sm-12">
-               
-					<div class="box-part text-center">
-                        <a href = "./Projects/Pong.html"> 
-							<img class = "animated zoomIn individual-img" src = "https://raw.githubusercontent.com/Razat94/c_sharp/master/Pong.png" title = "C# Pong Animation Game" />
-						</a>
-                        
-						<div class="title" style = "">
-							<h4>C# Pong Game</h4>
-						</div>
-                        
-						<div class="text">
-							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-						</div>
-                        
-						<a href="#">Learn More</a>
-                        
-					 </div>
-				</div>	 
-				
-				 <div class="col-lg-4 col-md-6 col-sm-12">
-               
-					<div class="box-part text-center">
-					    
-					    <a href = "./Projects/OSLCwebsite.html">
-							<img class = "animated zoomIn individual-img" src = "https://raw.githubusercontent.com/Razat94/OSLC/master/Github%20Images/OSTC%20Students%20Jumping.jpg" title = "One Step Learning Center Mock Website"/>
-						</a>
+	<body>
 
-						<div class="title">
-							<h4>OSLC Mock Website</h4>
-						</div>
-                        
-						<div class="text">
-							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-						</div>
-                        
-						<a href="#">Learn More</a>
-                        
-					 </div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 col-sm-12">
-               
-					<div class="box-part text-center">
-                        
-                        <a href = "./Projects/ACDC.html">
-							<img class = "animated zoomIn individual-img" src = "https://raw.githubusercontent.com/Razat94/ACDC/master/images/carousel/slideshow-0.jpg" 
-							title = "ACDC Website with Bootstrap"/>
-						</a>
+	<!-- Navbar -->
+	<nav class="navbar navbar-light navbar-expand-md">
+		<div class = "container">
+		<a href="./" class="navbar-brand mr" id = "site-header" style = "color: #02487e;">
+			Raza Tahir
+		</a> 
+		<button class= "navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar2" aria-label="Hamburger Icon">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse collapse" id="collapsingNavbar2">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="./" aria-label="Learn more about Razas projects">
+						Projects
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="./about.html" aria-label="Learn more about Raza">About</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav ml-auto flex-row flex-nowrap">
+				<li class="nav-item">
+					<a class="nav-link" href = "mailto:Razat51@gmail.com" target = "_blank" aria-label= "E-mail me at Razat51@gmail.com">
+						<i class="fa fa-envelope mr-1"></i>
+					</a> 
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://github.com/Razat94?tab=repositories" aria-label= "Look at some of Raza's other projects!">
+						<i class="fa fa-github-alt mr-1"></i>
+					</a> 
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://www.linkedin.com/in/razatahir" aria-label="Check out Raza's LinkedIn!">
+						<i class="fa fa-linkedin"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		</div>
+	</nav>
 
-						<div class="title">
-							<h4>ACDC</h4>
-						</div>
-                        
-						<div class="text">
-							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-						</div>
-                        
-						<a href="#">Learn More</a>
-                        
-					 </div>
-				</div>	 
-			
-				
-			
-				<div class="col-lg-4 col-md-6 col-sm-12">
-               
-					<div class="box-part text-center">
-                        
-                        <a href = "./Projects/Blog-Inc.html">
-							<img style = "" class = "animated zoomIn individual-img" src = "./public/img/paperpenicon.png" title = "CRUD Application using Node.js & MongoDB"/>
-						</a>
+	<header class="site-header border-bottom logo--left" role="banner">
+	</header>
 
-						<div class="title">
-							<h4>Blog Inc.</h4>
-						</div>
-                        
-						<div class="text">
-							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-						</div>
-                        
-						<a href="#">Learn More</a>
-                        
-					 </div>
-				</div>	 
-				
-				<div class="col-lg-4 col-md-6 col-sm-12">
-               
-					<div class="box-part text-center">
-					    
-					    <a href = "./Projects/Learn-SEO.html">
-							<img style = "" class = "animated zoomIn individual-img" src = "
-							https://raw.githubusercontent.com/Razat94/learnSEO/master/images/moz.PNG" 
-							title = "Learn SEO"/>
-						</a>
-						s
-						<div class="title">
-							<h4>Learn SEO</h4>
-						</div>
-                        
-						<div class="text">
-							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-						</div>
-                        
-						<a href="#">Learn More</a>
-                        
-					 </div>
-				</div>	 
-				
-				<div class="col-lg-4 col-md-6 col-sm-12">
-               
-					<div class="box-part text-center">
-						
-						<a href = "./Projects/learnCplusplus.html">
-							<img style = "" class = "animated zoomIn individual-img" src = "./public/img/learnCplusplus.PNG" />
-						</a>
 
-						<div class="title">
-							<h4>Github</h4>
-						</div>
-                        
-						<div class="text">
-							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
-						</div>
-                        
-						<a href="#">Learn More</a>
-                        
-					</div>
-				</div>
-			</div>		
-    	</div>
+	<div class="hero-image-ocean" id = "home">
+		<h1>Hi, I am Raza.</h1>
+		<h2>I like to design and code software & web applications. </h2>
 	</div>
-<body>
-</html>
+
+	<main class = "container"> 
+
+		<div class = "text-center section-heading">
+			<h2>Portfolio Projects</h2>
+			<div class="heading-after"><span></span></div>							
+		</div>
+			
+		<div class="row" id = "animation">
+			<div class="col-sm-12 col-md-6 col-xl-4 img-container text-center">
+				<a href = "./Projects/Pong.html"> 
+					<img class = "animated zoomIn individual-img" src="./public/img/unsplash/1.jpg" title = "C# Pong Animation Game" />
+				</a>
+				<div id = "site-header">
+					<h3 class = "demo-title"> Live Websites </h3>
+				</div>
+				<p>
+					View some sample live websites
+				</p>
+			</div>
+
+			<div class="col-sm-12 col-md-6 col-xl-4 img-container text-center">
+				<a href = "./Projects/Pong.html"> 
+					<img class = "animated zoomIn individual-img" src="./public/img/unsplash/2.jpg" title = "C# Pong Animation Game" />
+				</a>
+				<div id = "site-header">
+					<h3 class = "demo-title"> Software Applications </h3>
+				</div>
+				<p>
+					Check out some web & program applications (Additional software needed to use)
+				</p>
+			</div>
+
+			<div class="col-sm-12 col-md-6 col-xl-4 img-container text-center">
+					<a href = "./Projects/Pong.html"> 
+						<img class = "animated zoomIn individual-img" src="./public/img/unsplash/6.jpg" title = "C# Pong Animation Game" />
+					</a>
+					<div id = "site-header">
+						<h3 class = "demo-title"> Design </h3>
+					</div>
+					<p>
+						Take a look at some graphics
+					</p>
+			</div>
+
+			<div class="col-sm-12 col-md-6 col-xl-4 img-container text-center">
+				<a href = "./Projects/Pong.html"> 
+					<img class = "animated zoomIn individual-img" src="./public/img/unsplash/4.jpg" title = "C# Pong Animation Game" />
+				</a>
+				<div id = "site-header">
+					<h3 class = "demo-title"> Documentation </h3>
+				</div>
+				<p>
+					Come read up on some cool documents
+				</p>
+			</div>
+		</div>	
+
+		<div class="jumbotron" style = "margin-bottom: 1rem;">
+			
+			<p>
+				Pictures provided by <a href = "https://unsplash.com/">unsplash.com</a> 
+				"The internet’s source of freely-usable images."
+			</p>
+		</div>
+
+		<ul class="breadcrumb">
+			<li><a href="../../home.html">Home</a></li>
+			<li>Intro to Programming</li>
+		</ul>
+
+	</main>
+	</body>
+</html> 
