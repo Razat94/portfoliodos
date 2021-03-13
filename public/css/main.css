@@ -80,7 +80,7 @@ h6 {
 
 main {
 	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
 }
 
 main a {
@@ -185,31 +185,35 @@ ul {
 /* End of CSS Heading-After */
 
 /* Homepage CSS for Image Grid (CSS affecting text within grid included) */
-.demo-title {
+.category-card h3 {
     text-align: center;
     font: 22px Railway, sans-serif;
     margin-top: 10px;
-    margin-bottom: 5px;
-}
+	margin-bottom: 5px;
+	font-style: bold !important;
+	color: black;
 
-#site-header {
 	text-transform: uppercase;
-	letter-spacing: 0.1em;
 	box-sizing: border-box;
 }
 
-.img-container p {
-	color: #979797;
-	font: 15px Railway, sans-serif;
+.category-card p {
+	font-size: 16px;
+	line-height: 1rem;
 }
 
-.img-container:not(:last-child) {
+/* Give spacing except to last child */
+.category-card:not(:last-child) {
 	margin-bottom: 1rem;
-}s
+}
 
 #animation {
 	-webkit-animation: fadeEffect 1s;
 	animation: fadeEffect 1s;
+}
+
+#animation a {
+	text-decoration: none;
 }
 
 /* Fade in effect */
@@ -363,4 +367,49 @@ ul {
 	.aboutContainer {
 		padding: 0rem 12rem 1rem;
 	}
+}
+
+/* Links for the Projects pages */
+.demo-box {
+	height: 11.5rem;
+	padding: 2rem 1rem 1rem;
+	margin-bottom: 1rem !important;
+}
+
+/* Give box shadow  */
+.demo-box:hover {
+	/* W3 Schools */
+	/* https://www.w3schools.com/css/css3_shadows.asp */
+	box-shadow:0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+	text-decoration: underline;
+}
+
+
+.demo-box span {
+	text-decoration: none !important;
+}
+
+.demo-box p {
+    border-radius: 10px;
+    vertical-align: middle;
+    border: 0px solid black;
+    padding: 10px 1rem;  
+    background-color: none; /* #fb6a2f; */
+	color: white;
+	margin: 0px;
+}
+
+/* On hover effect */
+.moveOnHover {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.moveOnHover:hover {
+	-webkit-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	transform: translateY(-5px);
 }
