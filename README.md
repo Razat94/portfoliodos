@@ -18,3 +18,7 @@ P.S. By default, a web server will display the index.html/index.aspx/default.asp
 ## Additional Credits:
 * [Animate.css](https://github.com/daneden/animate.css)
 * [Bootstrap v4.1.1](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+
+#### Iteration 7
+- Projects are now categorized
+- Text based projects without any images are now included in the portfolio

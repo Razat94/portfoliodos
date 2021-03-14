@@ -32,10 +32,12 @@
 
 	<!-- CSS
 	================================================== -->
+	<link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Lato">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-	<link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href ="../public/css/main.css" id="header.css" type ="text/css">
-	
+	<link rel="stylesheet" href="../../vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href ="../../public/css/main.css" id="header.css" type ="text/css">
+
 	<!-- Scripts
 	================================================== -->
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>	 
@@ -44,7 +46,7 @@
 	<!-- <script src="js/bootstrap.min.js"></script> -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
-
+	
 <style>
 </style>
 	
@@ -53,7 +55,7 @@
 	<!-- Navbar -->
 	<nav class="navbar navbar-light navbar-expand-md">
 		<div class = "container">
-		<a href="../" class="navbar-brand mr" id = "site-header" style = "color: #02487e;">
+		<a href="../../" class="navbar-brand mr" id = "site-header" style = "color: #02487e;">
 			Raza Tahir
 		</a> 
 		<button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
@@ -62,13 +64,13 @@
 		<div class="navbar-collapse collapse" id="collapsingNavbar2">
 			<ul class="navbar-nav">
 				<li class="nav-item active">
-					<a class="nav-link" href="../">
+					<a class="nav-link" href="../../">
 						Projects
 						<span class="sr-only">Home</span>
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="../about.html">About</a>
+					<a class="nav-link" href="../../about.html">About</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav ml-auto flex-row flex-nowrap">
@@ -91,72 +93,71 @@
 		</div>
 		</div>
 	</nav>
-	
+
 	<header class="site-header border-bottom logo--left" role="banner">
 	</header>
 	
 	<!-- __________________________Beginning of Project_________________________________________________ -->
 	
-	<main class = "container" id = "animation"> 
+	<!-- Add aboutContainer class to main tag to always make webpage single column -->
+	<main class="container aboutContainer" id = "animation"> 
 		<div class = "text-center" id = "site-header">
-			<h1>Super King - A Fan-Based Website </h1>
-			<h2>An ASP.NET Core Project</h2>
+			<h1>Learn C++</h1>
+			<h2>A set of tutorials to learn how to program in C++</h2>
 		</div>
 		<section class = "row">
-			<div class="col-md-6 mt-3">
-				<img class = "project-img" src = "../public/img/SK.jpg"/>
+			<div class="mt-3 col-md-12"> <!-- add class "col-md-6" to make 2 columns -->
+				<!-- If you take out the below img, then all of a sudden the navbars spacing gets messed up -->
 				
-				<!--
-				Another way to do the button below it.
-				<a href = "https://github.com/Razat94/c_sharp/tree/master/C%23_Pong_Game" target = "_blank">
-				<input type="button" class = "projectCode" value="View Source Code"/>
-				</a>
-				-->
-					
-				<form action="https://github.com/Razat94/superking" target = "_blank"> 
-					<button class="projectLinksButton">Source Code</button>
-				</form>
-				
-				<!-- Not Live -->
-				<!-- 
-				<form action="https://razat94.github.io/ACDC/" target = "_blank"> 
+				<form action="https://razat94.github.io/learnCplusplus/" target = "_blank"> 
 					<button class="projectLinksButton">Visit</button>
-				</form>
-				-->
-			</div> <!-- End of column -->
-		
-			<div class = "col-md-6 mt-3">
+				</form>	
+
+				<form action="https://github.com/Razat94/learnCplusplus" target = "_blank"> 
+					<button class="projectLinksButton">Source Code</button>
+				</form>	
+				
+			</div>
+			
+			<div class="mt-3"> <!-- add class "col-md-6" to make 2 columns -->
 				<h6 class = "text-center font-weight-bold"> 
 					<u>Description</u> 
-				</h6>	
+				</h6>
 				<p>
-					A fun little website I made dedicated to one of my favorite super markets. 
-					I created this application because I wanted to learn how to: 
-					<ul>
-						<li> Create an <a href = "https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-3.1&tabs=visual-studio-code">ASP.NET Core MVC Application</a> </li>
-						<li> Utilize the 
-						<a href = "https://www.newtonsoft.com/json/help/html/Introduction.htm">Newtonsoft.Json package</a> </li>
-						<li> Utilize 
-						<a href = "https://docs.microsoft.com/en-us/dotnet/standard/serialization/introducing-xml-serialization">
-						XML Serialization </a> </li>
-					</ul>		
+					This website was created to explain the basics of C++.
+					I created this site mainly because 
+					many websites that teach C++ don't offer too many programming examples, homework, and projects.
+					In creating this site, 
+					I wanted the website to contain enough information 
+					to where the user can learn how to understand different types of programs of various difficulties with ease.
 				</p>
 				<p>
-					For this project, I recommend reading the <a href = "https://github.com/Razat94/superking/blob/master/README.md">READ.ME file</a> that is located on the repository.
+					I designed the site similar to how websites that contain documentation looks like.
+					I  heavily focused the design to look similar to three other websites that taught C++.
 				</p>
 				<p>
-					I used Newtonsoft.Json & XML Serialization to learn how to serialize and unserialize data.
+					The first website,  
+					<a href = "http://www.cplusplus.com/doc/tutorial/">cplusplus.com</a>,
+					is a website that I personally love and refer to all the time. 
+					Although the CSS for this website is a bit rough,
+					I loved the overall color scheme of the website 
+					and how they presented example programs and their expected outputs upon execution.
 				</p>
 				<p>
-					All in all, it was a fun project I did to get more comfortable with ASP.NET Core. 
-					This application helped better my understanding of how the MVC model works, 
-					and how each part communicates with one another. If you or if anyone else has any other recommendations on how I can better my website, please let me know.
-				</p>	
-			</div> <!-- End of div column -->	
+					The second website,
+					<a href = "https://www.w3schools.com/cpp/default.asp">w3schools.com</a>,
+					is a website that I've extensively used to learn front end design.
+					This website does a really great way of presenting different sections and new definitions to the user.
+				</p>
+				<p>
+					The third and last website,
+					<a href = "https://www.tutorialspoint.com/cplusplus/index.htm">tutorialspoint</a>,
+					has a very mobile friendly design.
+				</p>
+			</div>
 		</section>
 	</main>
+	<!-- __________________________Ending of Project_________________________________________________ -->
 	
-	<!-- __________________________End of Project_________________________________________________ -->
-
 </body>
 </html>
