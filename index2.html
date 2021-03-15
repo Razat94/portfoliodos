@@ -38,9 +38,6 @@
 	<link rel="stylesheet" href ="./public/css/main.css" id="main.css" type ="text/css">
 	<link rel="stylesheet" href ="./public/css/github-css/jumbotron-bootstrap.css" id="Jumbotron.css" type ="text/css">
 
-	<!-- Breadcrumb -->
-	<link rel = "stylesheet" type = "text/css" href = "https://razat94.github.io/learnCplusplus/public/common/breadcrumb/breadcrumb.css">
-
 	<!-- JS
 	================================================== -->
 	<script src= "./vendor/jquery/jquery.min.js"></script>
@@ -62,29 +59,6 @@
 </head>
 
 <style>
-
-	/* Main Hero Image on Home Page */
-	.hero-image-ocean {
-		background-image: url(./public/img/unsplash/0-ocean.jpg);
-		background-position: center center;
-		background-attachment: inherit;
-		background-size: cover;
-		background-repeat: no-repeat;
-		height: 50%;
-	
-		/* Text */
-		color: white;
-		padding: 3rem 0rem;
-		text-align: center;
-	
-		/* Darken CSS background image */
-		background-color: #33d6ff; /* #0077b3; */
-		background-blend-mode: multiply;
-	}
-	
-	.hero-image-ocean h1,  .oceanBackground h2  {
-		font-size: 2rem !important;
-	}
 		
 </style>
 
@@ -134,63 +108,58 @@
 	<header class="site-header border-bottom logo--left" role="banner">
 	</header>
 
-	<div class="hero-image-ocean" id = "home">
-		<h1>Hi, I am Raza.</h1>
-		<h2>I like to design and code software & web applications. </h2>
-	</div>
-
 	<main class = "container"> 
-
-		<div class = "text-center section-heading">
-			<h2>Portfolio Projects</h2>
-			<div class="heading-after"><span></span></div>							
+		
+		<div class="jumbotron" style = "margin-bottom: 1rem;">
+		  <h2>Raza's Portfolio</h2>
+		  <p>
+			Please check out <a href = "./data-science/">my data science portfolio</a> for some more projects!
+		  </p>
 		</div>
 			
 		<div class="row" id = "animation">
-			<a href = "./projects/1-Live-websites/" class="category-card col-sm-12 col-md-6 col-xl-4 moveOnHover text-center" title = "View websites I've designed" >
-				<img class = "animated zoomIn individual-img" src="./public/img/unsplash/1.jpg"/>
-				<h3> Live Websites </h3> 
-				<p class = "text-muted">
-					View some sample live websites
-				</p>
-			</a>
-
-			<a href = "./projects/2-Applications/" class="category-card col-sm-12 col-md-6 col-xl-4 moveOnHover text-center" title = "View applications I've programmed">
-				 
-				<img class = "animated zoomIn individual-img" src="./public/img/unsplash/2.jpg" />
-				<h3> Software Applications </h3>
-				<p class = "text-muted">
-					Check out some web & program applications (Additional software needed to use)
-				</p>
-			</a>
-
-			<a href = "./projects/3-Design/" class="category-card col-sm-12 col-md-6 col-xl-4 moveOnHover text-center" title = "Check out some artistic work">
-					 
-				<img class = "animated zoomIn individual-img" src="./public/img/unsplash/6.jpg" />
-				<h3> Design </h3>
-				<p class = "text-muted">
-					Take a look at some graphics
-				</p>
-			</a>
-
-			<a href = "./projects/4-Documentation/" class="category-card col-sm-12 col-md-6 col-xl-4 moveOnHover text-center" title = "Read up some documentation I've written">
-				
-				<img class = "animated zoomIn individual-img" src="./public/img/unsplash/4.jpg" />
-				<h3> Documentation </h3>
-				<p class = "text-muted">
-					Come read some cool documents
-				</p>
-			</a>
-		</div>	
-
-		<div id = "disclaimer" class="jumbotron" style = "margin-bottom: 1rem;">
+			<div class="col-sm-12 col-md-6 col-xl-4 img-container">
+				<a href = "./projects/2-Applications/2-Pong.html"> 
+					<img class = "animated zoomIn individual-img" src = "https://raw.githubusercontent.com/Razat94/c_sharp/master/Pong.png" title = "C# Pong Animation Game" />
+				</a>
+			</div>
+			<div class="col-sm-12 col-md-6 col-xl-4 img-container">
+				<a href = "./projects/1-Live-websites/2-ACDC.html">
+					<img class = "animated zoomIn individual-img" src = "https://raw.githubusercontent.com/Razat94/ACDC/master/images/carousel/slideshow-0.jpg" 
+					title = "ACDC Website with Bootstrap"/>
+				</a>
+			</div>
+			<!--
+			<div class="col-sm-12 col-md-6 col-xl-4 img-container">
+				<a href = "./Projects/OSLCwebsite.html">
+					<img class = "animated zoomIn individual-img" src = "https://raw.githubusercontent.com/Razat94/OSLC/master/Github%20Images/OSTC%20Students%20Jumping.jpg" title = "One Step Learning Center Mock Website"/>
+				</a>
+			</div>
+			-->
+			<div class="col-sm-12 col-md-6 col-xl-4 img-container">
+				<a href = "./projects/2-Applications/1-Superking.html">
+					<img class = "animated zoomIn individual-img" src = "./public/img/grid-img/SK.jpg" title = "Replica of SK Markets Website"/>
+				</a>
+			</div>
+			<div class="col-sm-12 col-md-6 col-xl-4 img-container">
+				<a href = "./projects/1-Live-websites/3-Blog-Inc.html">
+					<img style = "" class = "animated zoomIn individual-img" src = "./public/img/grid-img/paperpenicon.png" title = "CRUD Application using Node.js & MongoDB"/>
+				</a>
+			</div>
+			<div class="col-sm-12 col-md-6 col-xl-4 img-container">
+				<a href = "./projects/4-Documentation/1-Learn-SEO.html">
+					<img style = "" class = "animated zoomIn individual-img" src = "
+					https://raw.githubusercontent.com/Razat94/learnSEO/master/images/moz.PNG" 
+					title = "Learn SEO"/>
+				</a>
+			</div>
+			<div class="col-sm-12 col-md-6 col-xl-4 img-container" style = "">
+				<a href = "./projects/1-Live-websites/1-learnCplusplus.html">
+					<img style = "" class = "animated zoomIn individual-img" src = "./public/img/grid-img/learnCplusplus.PNG" />
+				</a>
+			</div>
 			
-			<p class = "text-muted">
-				Pictures provided by <a href = "https://unsplash.com/">unsplash.com</a> 
-				"The internet’s source of freely-usable images."
-			</p>
 		</div>
-
 	</main>
 	</body>
 </html> 

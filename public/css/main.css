@@ -184,6 +184,9 @@ ul {
 /* End of CSS Heading-After */
 
 /* Homepage CSS for Image Grid (CSS affecting text within grid included) */
+.category-card {
+}
+
 .category-card h3 {
     text-align: center;
     font: 22px Railway, sans-serif;
@@ -337,7 +340,7 @@ ul {
 /* For devices 576 px and smaller */
 @media (max-width: 576px) {
 	.aboutContainer {
-		padding: 0rem 1rem 1rem;
+		padding: 0rem 3rem 1rem;
 	}
 }
 
@@ -365,7 +368,7 @@ ul {
 /* For devices 1200px and larger */
 @media (min-width: 1200px) {
 	.aboutContainer {
-		padding: 0rem 12rem 1rem;
+		padding: 0rem 15rem 1rem;
 	}
 }
 
