@@ -90,9 +90,10 @@ main a {
 
 /* CSS to Highlight Links on MouseOver */
 /* provided by Christopher Heng, thesitewizard.com */
-main a:only-child:hover {
+main a:hover {
 	color: black ;
-    /* background-color: #cfc;  */
+	background-color: #cfc;
+	background-position: -99.99% 0;
 }
 
 main p, main li {
@@ -185,6 +186,7 @@ ul {
 
 /* Homepage CSS for Image Grid (CSS affecting text within grid included) */
 .category-card {
+	background-color: transparent !important;
 }
 
 .category-card h3 {
