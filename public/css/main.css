@@ -84,8 +84,8 @@ main {
 }
 
 main a {
-	text-decoration: underline;
 	/* background-color: var(--main-blue); */
+	text-decoration: underline;
 }
 
 /* CSS to Highlight Links on MouseOver */
@@ -187,6 +187,7 @@ ul {
 /* Homepage CSS for Image Grid (CSS affecting text within grid included) */
 .category-card {
 	background-color: transparent !important;
+	text-decoration: none !important;
 }
 
 .category-card h3 {
@@ -199,6 +200,9 @@ ul {
 
 	text-transform: uppercase;
 	box-sizing: border-box;
+}
+
+.card {
 }
 
 .category-card p {
@@ -214,9 +218,6 @@ ul {
 #animation {
 	-webkit-animation: fadeEffect 1s;
 	animation: fadeEffect 1s;
-}
-
-#animation a {
 }
 
 /* Fade in effect */
