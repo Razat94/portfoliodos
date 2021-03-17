@@ -17,7 +17,7 @@
 	<meta name="keywords" content="raza, tahir, raza tahir, portfolio, github, projects, website, web development" />
     
 	<!-- Tab Icon & Title -->
-	<title>Projects - Raza Tahir</title>
+	<title>OSLC Project - Raza Tahir</title>
 	<link id = "titleImg" rel="icon" type="image/png" href="./public/img/icons/Blue_orb.png"/>
 	 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -95,15 +95,15 @@
 		<!-- __________________________Beginning of OSLC project_________________________________________________ -->
 		
 		
-		<main class="container aboutContainer" id = "animation">  
+		<main class="container" id = "animation">  
 
 			<div class="text-center" id = "site-header">
 				<h1>One Step Learning Center</h1>
 				<h2>Powered by HTML, CSS, JavaScript and jQuery</h2>
 			</div>
 			
-			<section class = "row">
-				<div class = "mt-3"> <!-- add class "col-md-6" to make 2 columns --> 
+			<section>
+				<div class = "mt-3 aboutContainer"> <!-- add class "col-md-6" to make 2 columns --> 
 					<img class = "project-img" src = "https://raw.githubusercontent.com/Razat94/OSLC/master/Github%20Images/OSTC%20Students%20Jumping.jpg" />
 					
 					<form action="https://github.com/Razat94/OSLC" target = "_blank"> 
@@ -115,7 +115,7 @@
 					</form>
 				</div>
 
-				<div class = "mt-3 container" style = "width: 100%;"> <!-- add class "col-md-6" to make 2 columns -->
+				<div class = "mt-3 aboutContainer" style = "width: 100%;"> <!-- add class "col-md-6" to make 2 columns -->
 				
 					<center> <u>Description:</u> </center>
 					<p>
@@ -137,28 +137,40 @@
 						When working on the site, I noticed that there were two major design flaws with the original main website. I attempted to avoid this when recreating the site. 
 						These were the issues that were kept in mind: 
 					</p>
+
+				</div>
 				
-					<!-- 1st image -->
-					<div>
-						<img src = "https://raw.githubusercontent.com/Razat94/OSLC/master/Design%20Flaws/Spacing.png"
-						class = "col-lg-12">
+				<!-- 1st image card -->
+				<div class = "row">
+					<div class = "col-md-6">
+						<div id = "noGreenHighlight" class="card moveOnHover" style="border: none; margin-bottom: 2rem;" href = "">
+							<img style = "" class = "animation project-img card-img-top" src="https://raw.githubusercontent.com/Razat94/OSLC/master/Design%20Flaws/Spacing.png" alt="Card image cap">
+							<div class="card-body text-center" style = "padding: 0px;">
+								<small class="card-text text-muted">
+									First off, I felt as though there was too much padding and spacing everywhere.
+									As you can tell, everything looks stretched out.
+								</small>
+							</div>
+						</div>
+					</div>
 
-						<p class = "">
-							First off, I felt as though there was too much padding and spacing everywhere.
-							As you can tell, everything looks stretched out.
-						</p>
+					<div class = "col-md-6">
+						<div id = "noGreenHighlight" class="card moveOnHover" style="border: none; margin-bottom: 2rem;" href = "">
+							<img style = "" class = "animation project-img card-img-top" src="https://raw.githubusercontent.com/Razat94/OSLC/master/Design%20Flaws/Unresponsive.png" alt="Card image cap">
+							<div class="card-body text-center" style = "padding: 0px;">
+								<small class="card-text text-muted">
+										Secondly, the page wasn't responsive enough. 
+										For example, at a certain width, 
+										the navigation bar and the icon image weren't centered evenly.
+								</small>
+							</div>
+						</div>
 					</div>
 					
-					<div class = "" style = "margin: 1rem 0rem;">
-
-						<img style = "width: 100%;" class = "col-lg-12" src = "https://raw.githubusercontent.com/Razat94/OSLC/master/Design%20Flaws/Unresponsive.png">
-						
-						<p class = "">
-							Secondly, the page wasn't responsive enough. For example, at a certain width, the navigation bar and the icon image weren't centered evenly.
-						</p>	
-						
-					</div>
-					
+				</div> <!-- End of class row -->
+				
+				<div class = "aboutContainer" >
+				
 					<center> <u>What I've Learned: </u> </center>
 					
 					<p> 
@@ -168,17 +180,22 @@
 					
 					<a href = "https://security.stackexchange.com/questions/49376/is-it-ever-safe-to-skip-server-side-validations">here,</a>
 					
-					<a href = "https://stackoverflow.com/questions/30791458/username-and-password-validation-in-html"> here  </a>
+					<a href = "https://stackoverflow.com/questions/30791458/username-and-password-validation-in-html"> here</a>
 					
-					and 
+					 and 
 					
-					<a href = "https://stackoverflow.com/questions/46155/how-to-validate-email-address-in-javascript"> here.  </a>
+					<a href = "https://stackoverflow.com/questions/46155/how-to-validate-email-address-in-javascript"> here.</a>
 					
-					I experienced the drawback firsthand. When I tried running the page on Internet Explorer, this alert kept on popping up:
+					 I experienced the drawback firsthand. When I tried running the page on Internet Explorer, this alert kept on popping up:
 					</p>
 					
-					<center> <img src = "https://raw.githubusercontent.com/Razat94/OSLC/master/Design%20Flaws/jsFailure.PNG"> </center>
 					
+							<div id = "noGreenHighlight" class="card" style="padding-bottom: 0px; border: none; margin-bottom: 2rem;" href = "">
+								<img style = "height: 100%;" class = "animation card-img-top" src="https://raw.githubusercontent.com/Razat94/OSLC/master/Design%20Flaws/jsFailure.PNG" alt="Card image cap">
+								
+							</div>
+						
+
 					<p>
 					Internet Explorer automatically restricted the JavaScript from running, rendering the entire script useless. Even if users 
 					don't use Internet Explorer, other web browsers allow users the option to manually turn JavaScript off or on for all sites.
