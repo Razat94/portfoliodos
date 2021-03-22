@@ -125,6 +125,10 @@ ul {
 	margin-top: 0;
 }
 
+.fifty-width {
+	width: 50%;
+}
+
 
 /* Style for Overall Headings on Homepage & Category Pages */
 .section-heading {
