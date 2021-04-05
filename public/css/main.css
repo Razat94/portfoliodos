@@ -38,6 +38,11 @@ body {
 	--white: #ffffff; 
   }
 
+  .example {
+	background-color: var(--bg-color, #f6f8fa); /*Same as this:  background-color: #f6f8fa; */
+  }
+  
+
 @media only screen and (max-width: 576px) {
 	/* Make font icons bigger and more spread out in mobile devices */
 	.nav-link {
