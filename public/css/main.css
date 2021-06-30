@@ -412,7 +412,7 @@ ul {
 
 /* Links for the Projects pages */
 .demo-box {
-	height: 11rem; 
+	height: 12rem; 
 	/* To make box expand based on content, swap above lines with this: */
 	/* min-height: 100%;
 	height: auto;  */
